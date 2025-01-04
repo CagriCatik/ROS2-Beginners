@@ -14,16 +14,21 @@ const config = {
   tagline: 'Explore the fundamentals of ROS 2, the open-source framework revolutionizing robotics development. Designed for beginners, this guide will help you take your first steps into building scalable and efficient robotic systems.',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+// Set the production url of your site here
+url: 'https://cagricatik.github.io', // Correct: Root domain without sub-path
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'CagriCatik', // Usually your GitHub org/user name.
-  projectName: 'ROS2-Beginners', // Usually your repo name.
+// Set the /<baseUrl>/ pathname under which your site is served
+// For GitHub pages deployment, it is often '/<projectName>/'
+baseUrl: '/ROS2-Beginners/', // Correct: Sub-path with trailing slash
+
+// GitHub pages deployment config.
+// If you aren't using GitHub pages, you don't need these.
+organizationName: 'cagricatik', // Usually your GitHub org/user name.
+projectName: 'ROS2-Beginners', // Usually your repo name.
+
+// Enable GitHub Pages deployment
+deploymentBranch: 'gh-pages', // Default is 'gh-pages'
+trailingSlash: false, // Optional: depends on your preference
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

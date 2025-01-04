@@ -120,7 +120,7 @@ Apply your knowledge to a final project that integrates all the concepts:
 
 - A detailed, interactive guide for this project is available, built with **Docusaurus**. 
 - Visit the Docusaurus-powered guide for step-by-step instructions, examples, and more:
-    - 👉 [ROS 2 Beginners Guide](https://your-docusaurus-guide-url.com)
+    - 👉 [ROS 2 Beginners Guide](https://cagricatik.github.io/ROS2-Beginners/)
 
 ---
 
