@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Learn ROS 2 from the ground up with this comprehensive beginners guide. Explore topics like installation, debugging, custom interfaces, and building real-world robotics applications using detailed tutorials and examples.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
