@@ -118,12 +118,9 @@ Apply your knowledge to a final project that integrates all the concepts:
 
 ## Guide
 
-A detailed, interactive guide for this project is available, built with **Docusaurus**. 
-
-### Access the Guide
-
-Visit the Docusaurus-powered guide for step-by-step instructions, examples, and more:
-👉 [ROS 2 Beginners Guide](https://your-docusaurus-guide-url.com)
+- A detailed, interactive guide for this project is available, built with **Docusaurus**. 
+- Visit the Docusaurus-powered guide for step-by-step instructions, examples, and more:
+    - 👉 [ROS 2 Beginners Guide](https://your-docusaurus-guide-url.com)
 
 ---
 
