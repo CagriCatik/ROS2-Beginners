@@ -1,0 +1,39 @@
+:root {
+  --ifm-color-primary: #35477d; /* Main ROS 2 logo blue */
+  --ifm-color-primary-dark: #2e3e6e; /* Darker shade of ROS 2 logo blue */
+  --ifm-color-primary-darker: #27355f; /* Even darker shade */
+  --ifm-color-primary-darkest: #1f2b4f; /* Darkest blue for contrast */
+  --ifm-color-primary-light: #415d8c; /* Lighter shade of ROS 2 blue */
+  --ifm-color-primary-lighter: #4a6a9a; /* Softer light shade */
+  --ifm-color-primary-lightest: #5377a8; /* Lightest blue */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(53, 71, 125, 0.1); /* Light overlay for code highlighting */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #536d9b; /* Lighter blue for better contrast in dark mode */
+  --ifm-color-primary-dark: #495f8a;
+  --ifm-color-primary-darker: #405279;
+  --ifm-color-primary-darkest: #374569;
+  --ifm-color-primary-light: #5e79a8; /* Slightly brighter for dark mode */
+  --ifm-color-primary-lighter: #6a85b4; /* Softer bright shade */
+  --ifm-color-primary-lightest: #778fbe; /* Softest and lightest */
+  --docusaurus-highlighted-code-line-bg: rgba(53, 71, 125, 0.3); /* Adjusted for dark mode */
+}
+
+/* Change the footer background color */
+.footer {
+  background-color: #27355f; /* Replace with your desired color */
+  color: #ffffff; /* Replace with your desired text color */
+}
+
+/* Optional: Change footer link colors */
+.footer a {
+  color: #ffffff; /* Replace with your desired link color */
+}
+
+/* Optional: Change link color on hover */
+.footer a:hover {
+  color: #ffffff; /* Replace with your desired hover color */
+}
