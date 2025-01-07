@@ -1,8 +1,8 @@
-### Creating and Using a Launch File in ROS2
+# Creating and Using a Launch File
 
 Launch files in ROS2 allow you to start multiple nodes and configure their parameters from a single file. This tutorial will guide you through creating a launch file for a ROS2 application consisting of two nodes: a number publisher node and a number counter node. We will also set up a dedicated package for launch files, following best practices for organization and dependency management.
 
-#### Step 1: Create a New Package for Launch Files
+## Step 1: Create a New Package for Launch Files
 
 First, navigate to the source directory of your ROS2 workspace. For demonstration purposes, let's assume we have three packages already: one for Python nodes, one for C++ nodes, and an interface package. We'll create a new package specifically for launch files.
 
@@ -12,7 +12,7 @@ ros2 pkg create my_robot_bringup
 
 Creating a separate package for launch files helps centralize them, making it easier to manage dependencies and configurations.
 
-#### Step 2: Configure the Package
+## Step 2: Configure the Package
 
 Navigate into the newly created package and set up the necessary directories and files:
 
@@ -56,7 +56,7 @@ ament_package()
 </package>
 ```
 
-#### Step 3: Create the Launch File
+## Step 3: Create the Launch File
 
 Create a new launch file in the `launch` directory. The file will be named `number_app.launch.py` and will start both the number publisher and number counter nodes.
 
@@ -94,7 +94,7 @@ def generate_launch_description():
 
 This script defines a function `generate_launch_description` that returns a `LaunchDescription` object containing the nodes to be launched.
 
-#### Step 4: Build and Source the Package
+## Step 4: Build and Source the Package
 
 Build the new package and source the workspace:
 
@@ -104,7 +104,7 @@ colcon build --packages-select my_robot_bringup --symlink-install
 source install/setup.bash
 ```
 
-#### Step 5: Launch the Nodes
+## Step 5: Launch the Nodes
 
 To launch the nodes using the new launch file, use the following command:
 
@@ -120,6 +120,6 @@ ros2 node list
 
 You should see both `number_publisher_node` and `number_counter_node` in the list of active nodes.
 
-#### Conclusion
+## Conclusion
 
 By following this tutorial, you have created a dedicated package for launch files, configured it correctly, and written a launch file to start multiple nodes. This approach not only organizes your project better but also simplifies managing dependencies and configurations across different parts of your application.

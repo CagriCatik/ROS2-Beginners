@@ -1,17 +1,17 @@
-## Creating a Service Server in ROS 2
+# Creating a Service Server in ROS 2
 
-### Introduction
+## Introduction
 
 In this tutorial, we will develop a service server in Python using ROS 2. This server will accept two integers as input and return their sum as output. We will walk through the process step by step, ensuring all concepts are thoroughly explained and accurately implemented.
 
-### Step 1: Understanding ROS 2 Services
+## Step 1: Understanding ROS 2 Services
 
 A service in ROS 2 is defined by two main components:
 
 1. **Service Name:** This acts as a common interface between nodes, allowing them to find and utilize the service.
 2. **Service Type:** This defines the request and response structure for the service.
 
-### Step 2: Using an Existing Service Type
+## Step 2: Using an Existing Service Type
 
 For this tutorial, we will use an existing service type, `AddTwoInts`, provided by ROS 2. You can inspect available interfaces using:
 
@@ -24,7 +24,7 @@ This command will display the request and response structure:
 - Request: Two integers, `a` and `b`.
 - Response: One integer, `sum`.
 
-### Step 3: Setting Up the Workspace
+## Step 3: Setting Up the Workspace
 
 Navigate to your ROS 2 workspace and create a new directory for the service:
 
@@ -34,7 +34,7 @@ mkdir -p my_service_package/my_service
 cd my_service_package/my_service
 ```
 
-### Step 4: Creating the Service Server Node
+## Step 4: Creating the Service Server Node
 
 Create a new Python file for the service server:
 
@@ -43,7 +43,7 @@ touch add_two_ints_server.py
 chmod +x add_two_ints_server.py
 ```
 
-### Step 5: Writing the Service Server Code
+## Step 5: Writing the Service Server Code
 
 Open `add_two_ints_server.py` in your preferred text editor and add the following code:
 
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Step 6: Explanation of the Code
+## Step 6: Explanation of the Code
 
 1. **Imports:** Import the necessary modules and service type.
 2. **Class Definition:** Define the `AddTwoIntsServer` class, inheriting from `Node`.
@@ -89,7 +89,7 @@ if __name__ == '__main__':
 4. **Callback Function:** The callback function `add_two_ints_callback` processes the request by adding the two integers and returning the sum.
 5. **Main Function:** Initialize the ROS 2 system, create the node, and keep it running until interrupted.
 
-### Step 7: Building and Running the Service
+## Step 7: Building and Running the Service
 
 Navigate back to your workspace root and build the package:
 
@@ -107,7 +107,7 @@ ros2 run my_service_package add_two_ints_server
 
 You should see a log message indicating the server has started.
 
-### Step 8: Testing the Service
+## Step 8: Testing the Service
 
 In a new terminal, call the service using the ROS 2 command-line tool:
 
@@ -121,6 +121,6 @@ You should see the server log the request and response:
 Request: 3 + 4 = 7
 ```
 
-### Conclusion
+## Conclusion
 
 You have successfully created and tested a ROS 2 service server. This server can handle requests to add two integers and return their sum. This fundamental understanding can now be extended to creating more complex services and custom service types in ROS 2.

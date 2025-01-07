@@ -1,10 +1,10 @@
-## ROS 2 Parameters: A Comprehensive Guide
+# ROS 2 Parameters 
 
-### Introduction
+## Introduction
 
 In ROS 2 (Robot Operating System 2), parameters play a crucial role in configuring nodes without modifying the source code. This guide will provide an in-depth understanding of ROS 2 parameters, their purpose, and how to utilize them effectively in your projects.
 
-### Understanding the Problem
+## Understanding the Problem
 
 Consider a camera driver node within a ROS 2 package. This node is responsible for interfacing with a camera, capturing images, and possibly processing them. In a typical scenario, the node might need various configuration settings, such as:
 
@@ -14,15 +14,15 @@ Consider a camera driver node within a ROS 2 package. This node is responsible f
 
 Hardcoding these settings into your code is not ideal. Each time you need to change a setting, you would have to modify the code and recompile it. This approach is inflexible and inefficient, especially when you want to run multiple instances of the node with different configurations.
 
-### Introduction to ROS 2 Parameters
+## Introduction to ROS 2 Parameters
 
 ROS 2 parameters provide a solution to this problem. They allow you to configure node settings dynamically at runtime without changing the source code. This flexibility makes it easier to manage and deploy nodes with different configurations.
 
-### Declaring Parameters in ROS 2
+## Declaring Parameters in ROS 2
 
 Before using parameters, you need to declare them in your node. Let's explore this with an example of a camera driver node.
 
-#### Example: Camera Driver Node
+### Example: Camera Driver Node
 
 ```python
 import rclpy
@@ -60,11 +60,11 @@ if __name__ == '__main__':
 
 In this example, the `CameraDriverNode` class declares three parameters: `usb_device`, `frame_rate`, and `simulation_mode`. These parameters have default values which can be overridden at runtime.
 
-### Setting Parameter Values at Runtime
+## Setting Parameter Values at Runtime
 
 To run the node with specific parameter values, you can use a YAML file or command-line arguments.
 
-#### Using a YAML File
+### Using a YAML File
 
 Create a YAML file (e.g., `camera_params.yaml`) with the following content:
 
@@ -82,7 +82,7 @@ Launch the node with the YAML file:
 ros2 run your_package camera_driver_node --ros-args --params-file camera_params.yaml
 ```
 
-#### Using Command-Line Arguments
+### Using Command-Line Arguments
 
 You can also set parameter values directly from the command line:
 
@@ -90,10 +90,10 @@ You can also set parameter values directly from the command line:
 ros2 run your_package camera_driver_node --ros-args -p usb_device:=/dev/video1 -p frame_rate:=60 -p simulation_mode:=true
 ```
 
-### Recap
+## Recap
 
 ROS 2 parameters provide a flexible and efficient way to configure nodes. They allow you to set configuration values at runtime, eliminating the need to modify and recompile code for different settings. Each parameter has a name and a data type, such as boolean, integer, double, string, or lists of these types.
 
-### Summary
+## Summary
 
 In summary, ROS 2 parameters are essential for dynamically configuring nodes. They enhance the flexibility and manageability of your ROS 2 applications by allowing you to set and modify node settings at runtime. This guide has covered the basics of declaring and using parameters in ROS 2, providing you with the tools to implement this powerful feature in your projects.

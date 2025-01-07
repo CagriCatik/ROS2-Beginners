@@ -1,4 +1,4 @@
-# ROS 2 Launch Files: Customizing Node Configurations
+# Customizing Node Configurations
 
 In ROS 2, launch files provide a powerful and flexible way to start and manage multiple nodes within an application. This tutorial will demonstrate how to customize your application using launch files by renaming nodes, remapping topics, and setting parameters. The instructions will be precise and scientific, ensuring clarity and accuracy.
 

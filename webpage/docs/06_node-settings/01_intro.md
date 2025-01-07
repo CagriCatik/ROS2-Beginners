@@ -1,4 +1,4 @@
-# Comprehensive Tutorial on ROS2 Parameters
+# Introduction
 
 This tutorial aims to provide an in-depth understanding of ROS2 parameters, focusing on their declaration, retrieval, and usage within ROS2 nodes. Parameters are essential for configuring nodes at runtime, allowing for flexible and dynamic operation. By the end of this tutorial, you will be proficient in using ROS2 parameters in your applications.
 

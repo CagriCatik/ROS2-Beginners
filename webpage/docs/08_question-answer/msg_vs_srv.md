@@ -2,8 +2,6 @@
 
 In ROS2 (Robot Operating System 2), `srv` (services) and `msg` (messages) are fundamental concepts used for communication between nodes. Here’s a detailed explanation of the difference between them, along with a tutorial to illustrate their usage with a concrete example.
 
- 
-
 ## Messages (`msg`)
 
 Messages in ROS2 are used for unidirectional communication. They are defined data structures that can be sent over topics. Topics are named buses over which nodes exchange messages. A node can publish a message to a topic, and multiple other nodes can subscribe to that topic to receive the message.

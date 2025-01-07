@@ -1,5 +1,5 @@
 
-# ROS 2 - Beginner Projects
+# Beginner Projects
 
 ## 1. **Introductory Project: TurtleSim Controller**
    - **Objective**: Control the TurtleSim node using ROS 2.

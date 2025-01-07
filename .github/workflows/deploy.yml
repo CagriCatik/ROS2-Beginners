@@ -16,16 +16,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Ensure this matches your project's Node.js version in package.json
+          node-version: '18' # Match your Node.js version from package.json
+
+      - name: Navigate to Docusaurus project
+        run: cd webpage
 
       - name: Install dependencies
+        working-directory: ./webpage
         run: npm install
 
       - name: Build Docusaurus site
+        working-directory: ./webpage
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.Docusaurus_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./webpage/build
